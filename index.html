@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6BG8KV70C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-G6BG8KV70C');
+</script>
+
+<script>
+
+const subjects = [
+"Urgent Protest: Security Failure During Reza Pahlavi Visit in Berlin",
+"Formal Complaint – Serious Security Breach in Berlin Event",
+"Request for Immediate Investigation into Berlin Security Incident",
+"Security Breach in Berlin: Formal Protest and Inquiry",
+"Concern Over Critical Security Failure During Berlin Visit",
+"Immediate Attention Required: Security Lapse in Berlin",
+"Formal Objection to Inadequate Security Measures in Berlin",
+"Berlin Incident: Request for Accountability and Investigation",
+"Serious Security Concern Following Berlin Conference",
+"Demand for Transparency: Berlin Security Breakdown",
+"Official Protest – Security Failure Involving Reza Pahlavi",
+"Urgent Inquiry into Security Lapse in Berlin Event",
+"Berlin Security Incident: Request for Clarification and Action",
+"Formal Concern Regarding Protection Failure in Berlin",
+"Critical Security Breach in Berlin – Immediate Response Requested"
+];
+
+const bodies = [
+`To the Relevant Authorities,
+
+We wish to formally express our strongest concern and protest regarding the serious security failure that occurred during HRH Reza Pahlavi’s recent visit to Berlin. The fact that an individual was able to breach security perimeters and throw a substance at him constitutes not merely an act of protest, but a significant and unacceptable security violation.
+
+Key Concerns:
+• Security Negligence: Allowing an individual to reach close proximity to a high-profile political figure reflects a critical breakdown in protective protocols. Although the substance was reportedly ketchup, it could just as easily have been a weapon or a hazardous chemical.
+• Inadequate Standards: Considering the known threats surrounding the Iranian democratic movement, the level of protection provided by German authorities was clearly insufficient.
+
+Our Demands:
+
+A formal and detailed explanation regarding how this lapse occurred
+A transparent investigation into the perpetrator and any affiliations
+Clear assurances regarding enhanced protection measures for future visits
+
+The safety of political figures on European soil is a reflection of democratic responsibility. We expect a prompt and serious response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to raise a formal and urgent protest concerning the security breach that took place during HRH Reza Pahlavi’s visit to Berlin. The ability of an individual to bypass security and physically target him by throwing a substance is a clear and serious failure, not a simple act of dissent.
+
+Key Concerns:
+• Security Negligence: The close access achieved by the individual highlights a severe deficiency in security protocols. While the substance used was reportedly harmless, the same breach could have resulted in far more dangerous consequences.
+• Inadequate Standards: Given the political sensitivities and known risks, the protection provided was not aligned with expected security standards.
+
+Our Demands:
+
+A comprehensive explanation from the responsible authorities
+Full transparency regarding the perpetrator and any affiliations
+Concrete measures to ensure such failures do not recur
+
+We expect accountability and swift action.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We wish to formally register our protest regarding the alarming security lapse that occurred during HRH Reza Pahlavi’s recent presence in Berlin. An individual’s ability to bypass security measures and throw a substance at him constitutes a serious breach.
+
+Key Concerns:
+• Security Negligence: Such proximity should not have been possible under proper protocols. Although the substance was reportedly ketchup, the situation could have involved a weapon or chemical agent.
+• Inadequate Standards: The security arrangements failed to reflect the risks associated with high-profile political figures.
+
+Our Demands:
+
+A formal explanation of the incident
+A transparent investigation into the individual involved
+Clarification of improved security procedures moving forward
+
+This matter requires urgent attention.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We express our strongest objection to the serious security failure that took place during HRH Reza Pahlavi’s visit to Berlin. The incident in which an individual breached security and threw a substance must be treated as a critical security violation.
+
+Key Concerns:
+• Security Negligence: The incident demonstrates a clear failure in maintaining protective distance. The nature of the substance is irrelevant to the severity of the breach.
+• Inadequate Standards: Security provisions did not meet the level required for such a high-profile individual.
+
+Our Demands:
+
+An official and detailed explanation
+Full investigation into the perpetrator
+Assurance of stronger future protection
+
+We expect immediate and responsible action.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to formally express our strongest protest regarding the serious security failure that occurred during HRH Reza Pahlavi’s recent visit to Berlin. The fact that an individual managed to bypass established security perimeters and throw a substance at him must not be characterized merely as an “act of protest,” but rather as a grave and unacceptable breach of security.
+
+Key Concerns:
+• Security Negligence: The ability of an individual with hostile intent to approach a high-profile political figure at such close range clearly indicates a fundamental breakdown in security protocols. While the substance used has been reported as ketchup, the same breach could easily have involved a lethal weapon or a dangerous chemical agent.
+• Inadequate Standards: In light of the well-documented threats against figures associated with the Iranian democratic movement, the level of protection provided by German security agencies was evidently insufficient and does not meet acceptable standards.
+
+Our Demands:
+
+Official Explanation: A clear, formal, and convincing account from the German government and Berlin security authorities regarding how this lapse in protective measures occurred.
+Transparent Investigation: A comprehensive investigation into the identity of the perpetrator, including any possible affiliations with foreign entities or organized groups.
+Future Guarantees: Detailed clarification of the concrete actions that will be implemented to ensure the highest level of security during any future visits.
+
+The safety of political figures on European soil serves as a critical measure of the commitment of democratic nations to the principles they uphold. We expect a prompt, thorough, and decisive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We wish to formally register our strongest protest concerning the alarming security breach that took place during HRH Reza Pahlavi’s visit to Berlin. The incident in which an individual was able to bypass security controls and throw a substance at him constitutes a serious violation and cannot be dismissed as a simple act of protest.
+
+Key Concerns:
+• Security Negligence: The fact that an individual was able to gain such close physical proximity to a high-profile political figure demonstrates a critical failure in the implementation of security protocols. Although the substance used was reportedly harmless, it could just as easily have been a weapon or a hazardous chemical agent.
+• Inadequate Standards: Given the existing and well-known threats directed toward the Iranian democratic movement, the protective measures in place were clearly inadequate and unacceptable.
+
+Our Demands:
+
+Official Explanation: A detailed and formal explanation from the responsible German authorities regarding this failure.
+Transparent Investigation: Full transparency regarding the perpetrator’s identity and any affiliations or external connections.
+Future Guarantees: Clear assurances regarding strengthened security measures to prevent any recurrence of such incidents.
+
+The protection of political figures within Europe reflects broader commitments to democratic values and security. We expect a timely and serious response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to express our strongest concern and formal protest regarding the significant security lapse that occurred during HRH Reza Pahlavi’s recent presence in Berlin. The ability of an individual to bypass security measures and throw a substance at him represents a grave breach.
+
+Key Concerns:
+• Security Negligence: Allowing an individual to approach at such proximity reflects a serious deficiency in security enforcement. While the substance used was reportedly ketchup, the implications of such access are severe, as it could have involved a weapon or chemical threat.
+• Inadequate Standards: Considering the current geopolitical climate and known risks, the level of protection provided was insufficient and unacceptable.
+
+Our Demands:
+
+Official Explanation: A clear and comprehensive explanation regarding the lapse in security.
+Transparent Investigation: A full and transparent inquiry into the perpetrator and any possible affiliations.
+Future Guarantees: Detailed measures outlining how such risks will be mitigated in future engagements.
+
+The safety of political leaders on European soil is a reflection of democratic responsibility. We expect prompt action.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We formally express our strongest protest regarding the serious and concerning security failure that occurred during HRH Reza Pahlavi’s visit to Berlin. The incident, in which an individual was able to breach security and throw a substance, constitutes a critical violation.
+
+Key Concerns:
+• Security Negligence: The ability to reach such proximity indicates a clear breakdown in protective measures. Although the substance was reportedly harmless, the same breach could have resulted in severe consequences.
+• Inadequate Standards: Given the risks associated with high-profile political figures, the level of protection provided was not adequate.
+
+Our Demands:
+
+Official Explanation: A formal clarification from the authorities
+Transparent Investigation: Full disclosure regarding the perpetrator
+Future Guarantees: Assurance of improved security protocols
+
+The matter requires serious and immediate attention.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to formally express our strongest protest regarding the serious security breach that occurred during HRH Reza Pahlavi’s recent visit to Berlin. The fact that an individual was able to bypass established security perimeters and throw a substance at him must not be dismissed as a mere act of protest, but must be recognized as a grave and unacceptable failure in security.
+
+Key Concerns:
+• Security Negligence: The ability of an individual with hostile intent to gain such close proximity to a high-profile political figure demonstrates a fundamental breakdown in security protocols and enforcement. While the substance used has been reported as ketchup, this does not diminish the seriousness of the breach, as it could just as easily have been a lethal weapon or a dangerous chemical agent.
+• Inadequate Standards: In light of the well-documented threats facing individuals associated with the Iranian democratic movement, the level of protection provided by German security authorities was clearly insufficient and does not meet the standards expected under such circumstances.
+
+Our Demands:
+
+Official Explanation: We request a formal, detailed, and convincing explanation from the German government and Berlin security authorities regarding how this failure in protective measures occurred.
+Transparent Investigation: We call for a comprehensive and transparent investigation into the identity of the perpetrator, including any possible affiliations with foreign entities or organized groups.
+Future Guarantees: We seek clear and concrete assurances regarding the steps that will be taken to ensure the highest level of protection during any future visits.
+
+The safety of political figures on European soil is a reflection of the commitment of democratic nations to fundamental principles of security and accountability. We expect a prompt, thorough, and decisive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We wish to formally register our strongest protest regarding the alarming security failure that took place during HRH Reza Pahlavi’s recent visit to Berlin. The incident in which an individual managed to bypass security barriers and throw a substance at him constitutes a serious security breach and cannot be regarded as a simple act of protest.
+
+Key Concerns:
+• Security Negligence: The ability of an individual to approach a high-profile political figure at such close range clearly indicates a critical failure in the implementation and enforcement of security protocols. Although the substance used was reportedly harmless, the same breach could have resulted in the use of a lethal weapon or a dangerous chemical agent.
+• Inadequate Standards: Given the known and ongoing threats against figures associated with the Iranian democratic movement, the level of protection provided was clearly inadequate and unacceptable.
+
+Our Demands:
+
+Official Explanation: A clear, formal, and comprehensive explanation from the relevant German authorities regarding the circumstances that allowed this breach to occur.
+Transparent Investigation: Full transparency regarding the identity of the perpetrator, including any affiliations or connections to foreign entities or organized groups.
+Future Guarantees: Detailed clarification regarding the specific measures that will be implemented to prevent similar incidents in the future.
+
+The protection of political figures within Europe is a fundamental responsibility and reflects broader commitments to democratic values. We expect a timely and substantive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to express our strongest concern and formal protest regarding the serious security lapse that occurred during HRH Reza Pahlavi’s presence in Berlin. The fact that an individual was able to bypass security measures and throw a substance at him represents a grave breach that must be addressed with the utmost seriousness.
+
+Key Concerns:
+• Security Negligence: Allowing an individual to gain such close physical access to a high-profile political figure demonstrates a significant failure in security protocols. While the substance used was reportedly ketchup, the implications of this breach are severe, as it could just as easily have involved a weapon or hazardous chemical.
+• Inadequate Standards: Considering the current geopolitical environment and the known risks associated with the Iranian democratic movement, the protective measures in place were clearly insufficient and unacceptable.
+
+Our Demands:
+
+Official Explanation: A formal and detailed explanation regarding how this failure in security protocols occurred.
+Transparent Investigation: A full and transparent inquiry into the identity of the individual responsible, including any potential affiliations.
+Future Guarantees: Clear and concrete assurances regarding enhanced security measures for future visits.
+
+The safety of prominent political figures on European soil is a critical indicator of commitment to democratic principles and security standards. We expect a prompt and comprehensive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We formally express our strongest protest regarding the serious and concerning security breach that occurred during HRH Reza Pahlavi’s recent visit to Berlin. The incident, in which an individual was able to bypass security controls and throw a substance at him, represents a critical failure and must not be minimized as an act of protest.
+
+Key Concerns:
+• Security Negligence: The fact that such close proximity was achieved by an individual with apparent hostile intent indicates a clear breakdown in protective measures and security enforcement. Although the substance used was reportedly harmless, the same level of access could have allowed for a far more dangerous attack involving a weapon or chemical agent.
+• Inadequate Standards: Given the risks and threats associated with figures connected to the Iranian democratic movement, the level of protection provided was inadequate and unacceptable.
+
+Our Demands:
+
+Official Explanation: A formal and convincing explanation from the German authorities regarding how this breach was possible.
+Transparent Investigation: A thorough and transparent investigation into the perpetrator, including any affiliations or external connections.
+Future Guarantees: Clear assurances regarding the implementation of stronger and more effective security measures in the future.
+
+This matter raises serious concerns regarding the adequacy of current security standards. We expect an immediate and responsible response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to formally express our strongest protest concerning the alarming security failure that occurred during HRH Reza Pahlavi’s visit to Berlin. The ability of an individual to bypass security perimeters and throw a substance at him constitutes a serious and unacceptable breach.
+
+Key Concerns:
+• Security Negligence: The capacity of an individual to reach such close proximity to a high-profile political figure clearly reflects a major failure in the enforcement of security protocols. While the substance used was reportedly ketchup, the same breach could have involved a lethal weapon or a dangerous chemical agent.
+• Inadequate Standards: In view of the well-known threats directed at the Iranian democratic movement, the protective measures in place were clearly insufficient and fell below acceptable standards.
+
+Our Demands:
+
+Official Explanation: A formal and detailed clarification from the relevant German authorities regarding this lapse in security.
+Transparent Investigation: Full transparency regarding the identity of the perpetrator and any potential affiliations or connections.
+Future Guarantees: Clear and concrete assurances regarding the measures that will be taken to ensure adequate protection in future visits.
+
+The safety of political figures on European soil is a matter of serious importance and reflects broader commitments to democratic values and security. We expect a prompt and decisive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We are writing to formally convey our strongest protest regarding the serious security failure that occurred during HRH Reza Pahlavi’s recent visit to Berlin. The incident in which an individual was able to bypass established security perimeters and throw a substance at him must not be interpreted merely as an act of protest, but rather as a significant and unacceptable breach of security.
+
+Key Concerns:
+• Security Negligence: The fact that an individual with apparent hostile intent was able to gain such close proximity to a high-profile political figure indicates a critical breakdown in both the design and execution of security protocols. While the substance used has been reported as ketchup, this does not mitigate the seriousness of the incident, as the same breach could have involved a lethal weapon or a harmful chemical agent.
+• Inadequate Standards: Given the well-known and ongoing threats faced by figures associated with the Iranian democratic movement, the level of protection provided by German security authorities was clearly insufficient and fell below expected standards.
+
+Our Demands:
+
+Official Explanation: A formal, clear, and comprehensive explanation from the German government and Berlin security officials detailing how this failure in protective measures occurred.
+Transparent Investigation: A full and transparent investigation into the identity of the perpetrator, including any potential affiliations with foreign entities or organized groups.
+Future Guarantees: Clear and concrete assurances regarding the specific steps that will be taken to ensure the highest level of protection during any future visits.
+
+The safety of prominent political figures on European soil is a critical reflection of the commitment of democratic nations to security and accountability. We expect a prompt, thorough, and decisive response.
+
+Sincerely,
+The People of Iran`,
+
+`To the Relevant Authorities,
+
+We wish to formally express our strongest concern and protest regarding the alarming security breach that took place during HRH Reza Pahlavi’s recent presence in Berlin. The fact that an individual was able to bypass security barriers and throw a substance at him constitutes a grave violation and must not be minimized as a simple act of protest.
+
+Key Concerns:
+• Security Negligence: The ability of an individual to approach a high-profile political figure at such close range clearly demonstrates a serious failure in the enforcement of security measures. Although the substance used was reportedly harmless, the same breach could have resulted in a far more dangerous outcome involving a weapon or chemical agent.
+• Inadequate Standards: In light of the existing threats and the sensitive political context surrounding the Iranian democratic movement, the level of protection provided was inadequate and unacceptable.
+
+Our Demands:
+
+Official Explanation: A detailed and formal explanation from the responsible German authorities regarding the circumstances that led to this security lapse.
+Transparent Investigation: Full transparency concerning the identity of the perpetrator, as well as any affiliations or external connections.
+Future Guarantees: Clear clarification of the measures that will be implemented to ensure that such incidents do not occur in the future.
+
+The protection of political figures within Europe is a fundamental responsibility and reflects broader commitments to democratic principles. We expect a timely and substantive response.
+
+Sincerely,
+The People of Iran`,
+
+ `To the Relevant Authorities,
+
+We are writing to formally register our strongest protest regarding the serious and concerning security breach that occurred during HRH Reza Pahlavi’s visit to Berlin. The incident, in which an individual was able to bypass security controls and throw a substance at him, represents a critical failure that must be addressed with the utmost seriousness and cannot be dismissed as a routine act of protest.
+
+Key Concerns:
+• Security Negligence: The fact that an individual was able to reach such close proximity to a high-profile political figure clearly reflects a breakdown in security protocols and their enforcement. While the substance used was reportedly ketchup, the implications remain severe, as the same breach could have involved a lethal weapon or a hazardous chemical agent.
+• Inadequate Standards: Considering the well-documented risks and threats directed toward individuals associated with the Iranian democratic movement, the protective measures in place were clearly insufficient and did not meet acceptable standards.
+
+Our Demands:
+
+Official Explanation: A formal and comprehensive explanation from the German authorities outlining how this breach was possible.
+Transparent Investigation: A thorough and transparent investigation into the identity of the perpetrator, including any potential affiliations or links to external entities.
+Future Guarantees: Clear and concrete assurances regarding the implementation of enhanced security measures to ensure adequate protection in future visits.
+
+The safety of political figures on European soil is a matter of serious importance and reflects the commitment of democratic nations to uphold security and accountability. We expect a prompt and decisive response.
+
+Sincerely,
+The People of Iran`
+];
+
+function sendEmail(){
+
+const subject = subjects[Math.floor(Math.random() * subjects.length)];
+const body = bodies[Math.floor(Math.random() * bodies.length)];
+
+gtag('event','mailto_open',{
+event_category:'Email Campaign',
+event_label:'GitHub Redirect'
+});
+
+const mailto =
+"mailto:poststelle@bmi.bund.de,presse@polizei.bund.de,poststelle@bfv.bund.de"
++ "?bcc=pressestelle@polizei.berlin.de,webmaster@europarl.europa.eu,eu-de-kommission@ec.europa.eu,poststelle@bk.bund.de,webmaster@europarl.europa.eu,droi-secretariat@ep.europa.eu,afet-secretariat@europarl.europa.eu,info@dw.com,english@dw.com,spiegel@spiegel.de,info@faz.de,tips@politico.eu,contact@euobserver.com,david.mcallister@europarl.europa.eu,bernd.lange@europarl.europa.eu,michael.gahler@europarl.europa.eu,raphael.glucksmann@europarl.europa.eu,urmas.paet@europarl.europa.eu,anna.cavazzini@europarl.europa.eu,valerie.hayer@europarl.europa.eu"
++ "&subject=" + encodeURIComponent(subject) 
++ "&body=" + encodeURIComponent(body);
+
+window.location.href = mailto;
+
+}
+
+window.onload = sendEmail;
+
+</script>
+
+</head>
+
+<body>
+<p>اگه شما این پیام رو قبل از بازشدن ایمیل تون و کلیک روی ارسال می بینین. روی سه نقطه بالا سمت راست بزنین </p>
+ <p> Open in External Browser </p>
+  
+</body>
+</html>
